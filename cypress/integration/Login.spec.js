@@ -22,13 +22,26 @@ context('Funcionalidade Login', () => {
 
     });
 
-    it.only('Deve fazer login com sucesso - Usando a base de dados ', () => {
+    // Vai usar o arquivo da pasta Fixture . arquivo perfil.json
+    it('Deve fazer login com sucesso - Usando a base de dados ', () => {
         cy.get('#username').type(perfil.usuario)
         cy.get('#password').type(perfil.senha)
         cy.get('.woocommerce-form > .button').click()
 
-        cy.get('.oage-title').should('contain', 'Minha conta')
-        
+        cy.get('.page-title').should('contain', 'Minha conta')
+
+    });
+//Outra maneira de usar os dados da pasta Fixtures, cria uma variável DADOS
+    it.only('Deve fazer login com sucesso - Usando fixture', () => {
+        cy.fixture('perfil').then(dados => {
+            cy.get('#username').type(dados.usuario)
+            cy.get('#password').type(dados.senha, {log: false}) // Log: false, quando rodar o teste ele não vai exibir senha
+            cy.get('.woocommerce-form > .button').click()
+
+            cy.get('.page-title').should('contain', 'Minha conta')
+
+        })
+
     });
 
     it('Deve exiibir mensagem de usuário inválido', () => {
