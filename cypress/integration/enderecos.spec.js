@@ -5,7 +5,7 @@ const Faker = require('faker-br/lib');
 describe('Funcionalidade cadastro de endereços', () => {
 
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+        cy.visit('minha-conta')
 
     });
 
