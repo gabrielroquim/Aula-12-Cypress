@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/gabrielroquim/Cypress-Aula_12#readme",
   "dependencies": {
-    "cypress": "^9.3.1"
+    "cypress": "^9.3.1",
+    "faker": "^6.6.6",
+    "faker-br": "^0.4.1"
   }
 }
