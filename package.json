@@ -1,0 +1,23 @@
+{
+  "name": "cypress-aula_12",
+  "version": "1.0.0",
+  "description": "Aula 12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielroquim/Cypress-Aula_12.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielroquim/Cypress-Aula_12/issues"
+  },
+  "homepage": "https://github.com/gabrielroquim/Cypress-Aula_12#readme",
+  "dependencies": {
+    "cypress": "^9.3.1"
+  }
+}
