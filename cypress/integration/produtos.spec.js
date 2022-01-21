@@ -16,7 +16,7 @@ describe('Funcionalidade Página de Produtos', () => {
             .click()
     });
 
-    it.only('Deve Adicionar um produto ao carrinho', () => {
+    it('Deve Adicionar um produto ao carrinho', () => {
         var quantidade = 3 // essa variável vai guardar o valor 3
         cy.get('[class="product-block grid"]')
             .eq(3).click() // Seleciona um item da lista com esse nome
@@ -28,6 +28,19 @@ describe('Funcionalidade Página de Produtos', () => {
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
         cy.get('.woocommerce-message').should('contain', quantidade + ' × “Ajax Full-Zip Sweatshirt” foram adicionados no seu carrinho.') // sinal de + vai concatenar a variável com a mensagem
 
+    });
+
+    //Maneira mais simples de executar um teste
+    // vai rodar usando o comands vai adicionar o produto com QTD 1, todos esse paramentros foram passados no arquivo commands
+    it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
+        cy.addProdutos('Argus All-Weather Tank', 'M', 'Gray', 1) 
+
+    });
+
+    it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
+        cy.addProdutos('Aether Gym Pant', '36', 'Blue', 2) 
+
+        
     });
 
 });
