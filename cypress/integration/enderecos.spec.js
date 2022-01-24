@@ -11,7 +11,7 @@ describe('Funcionalidade Endereços -  Faturamento e Entregas', () => {
 
     });
 
-    it('Deve fazer cadastro de faturamento com sucesso', () => {
+    it('Deve fazer cadastro de faturamento com sucesso na página', () => {
             
 
     })
