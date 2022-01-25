@@ -37,16 +37,17 @@ describe('Funcionalidade Página de Produtos', () => {
 
     });
 
-    it.only('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
+    it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
         cy.addProdutos('Aether Gym Pant', '36', 'Blue', 2) 
 
         
     });
 
-    it.only('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
+    it.('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
         cy.addProdutos('Ajax Full-Zip Sweatshirt', 'XS', 'Green', 4) 
 
         
     });
+    // aqui você pode validar o teste com vários cenarios
 
 });
