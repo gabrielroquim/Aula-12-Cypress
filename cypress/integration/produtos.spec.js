@@ -33,20 +33,20 @@ describe('Funcionalidade Página de Produtos', () => {
     //Maneira mais simples de executar um teste
     // vai rodar usando o comands vai adicionar o produto com QTD 1, todos esse paramentros foram passados no arquivo commands
     it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
-        cy.addProdutos('Argus All-Weather Tank', 'M', 'Gray', 1) 
+        cy.addProdutos('Argus All-Weather Tank', 'M', 'Gray', 1)
 
     });
 
     it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
-        cy.addProdutos('Aether Gym Pant', '36', 'Blue', 2) 
+        cy.addProdutos('Aether Gym Pant', '36', 'Blue', 2)
 
-        
+
     });
 
-    it.('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
-        cy.addProdutos('Ajax Full-Zip Sweatshirt', 'XS', 'Green', 4) 
+    it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
+        cy.addProdutos('Ajax Full-Zip Sweatshirt', 'XS', 'Green', 4)
 
-        
+
     });
     // aqui você pode validar o teste com vários cenarios
 
