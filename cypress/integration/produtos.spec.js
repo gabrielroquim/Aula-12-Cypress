@@ -18,7 +18,7 @@ describe('Funcionalidade Página de Produtos', () => {
 
     it('Deve Adicionar um produto ao carrinho', () => {
         var quantidade = 3 // essa variável vai guardar o valor 3
-        cy.get('[class="product-block grid"]')
+        cy.get('.product-block grid"]')
             .eq(3).click() // Seleciona um item da lista com esse nome
         cy.get('.button-variable-item-M').click()
         cy.get('.button-variable-item-Green').click()
@@ -32,7 +32,7 @@ describe('Funcionalidade Página de Produtos', () => {
 
     //Maneira mais simples de executar um teste
     // vai rodar usando o comands vai adicionar o produto com QTD 1, todos esse paramentros foram passados no arquivo commands
-    it('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
+    it.only('Deve adicionar produtos ao carrinho - Usando o comando customizado', () => {
         cy.addProdutos('Argus All-Weather Tank', 'M', 'Gray', 1)
 
     });
